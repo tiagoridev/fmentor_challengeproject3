@@ -1,0 +1,64 @@
+/*generals styles*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: var(--font);
+}
+:root{
+    --color-p1: hsl(25, 97%, 53%);
+    --color-n1: hsl(0, 0%, 100%);
+    --color-n2: hsl(217, 12%, 63%);
+    --color-n3: hsl(216, 12%, 54%);
+    --color-n4: hsl(213, 19%, 18%);
+    --color-n5: hsl(216, 12%, 8%);
+    --font: "Overpass", sans-serif;
+}
+body{    
+    background-color: var(--color-n5);
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/**styles**/
+#container{
+    max-width: 25.75rem;
+    background-color: var(--color-n4);
+    padding: 2.5rem;
+}
+
+#icon-star{
+    background-image: url('../img/icon-star.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;       
+    display: block;
+    height: .99rem;
+    width: .99rem;     
+}
+
+#border{
+    background-color: var(--color-n1);     
+    height: .99rem;
+    width: .99rem;
+    padding: 1.0rem;
+    margin-bottom: 2.5rem;
+    border-radius: 50%;
+}
+
+#container-title{
+    color: var(--color-n1);
+    font-weight: 700;
+}
+
+#container-text{
+    max-width: 35ch;
+    font-size: .94em;
+    color: var(--color-n3);
+}
+
+#container-list{
+    display: flex;
+    justify-content: space-between;
+}
