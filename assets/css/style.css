@@ -12,6 +12,7 @@
     --color-n3: hsl(216, 12%, 54%);
     --color-n4: hsl(213, 19%, 18%);
     --color-n5: hsl(216, 12%, 8%);
+    --color-n6:hsla(216, 12%, 54%, .2);
     --font: "Overpass", sans-serif;
 }
 body{    
@@ -26,6 +27,7 @@ body{
     max-width: 25.75rem;
     background-color: var(--color-n4);
     padding: 2.5rem;
+    border-radius: 1.88rem;
 }
 
 #icon-star{
@@ -38,27 +40,71 @@ body{
     width: .99rem;     
 }
 
-#border{
-    background-color: var(--color-n1);     
+#border-icon{
+    background-color: var(--color-n6);
     height: .99rem;
     width: .99rem;
     padding: 1.0rem;
     margin-bottom: 2.5rem;
-    border-radius: 50%;
+    border-radius: 50%;   
 }
 
 #container-title{
     color: var(--color-n1);
     font-weight: 700;
+    margin-bottom: 1.25rem;
 }
 
 #container-text{
     max-width: 35ch;
     font-size: .94em;
     color: var(--color-n3);
+    margin-bottom: 2rem;
 }
 
 #container-list{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+#container-list .list-item{
+    background-color: var(--color-n6);
+    color: var(--color-n3);
+    width: .99rem;
+    height: .99rem;
+    padding: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+#container-list .list-item:hover{
+    background-color: var(--color-n2);
+    color: var(--color-n1);
+}
+
+.activo{
+    background-color: var(--color-p1);
+    color: var(--color-n1);
+}
+
+#container-btn{
+    font-size: 1rem;
+    width: 100%;
+    height: 2.81rem;
+    border-radius: 1.88rem;
+    border: none;
+    background-color: var(--color-p1);
+    text-transform: uppercase;
+    color: var(--color-n1);
+    letter-spacing: .1em;
+    transition: all .1s linear;
+}
+
+#container-btn:hover{
+    background-color: var(--color-n1);
+    color: var(--color-p1);
+    cursor: pointer;
 }
