@@ -1,7 +1,8 @@
-let list = document.querySelector('#container-text');
+const listItems = document.querySelectorAll('.list-item');
+let item = ''
 
-function clicar(){
-    list.classList.toggle('activo');
-}
-
-list.addEventListener('click', clicar);
+listItems.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('selected');
+  });
+});

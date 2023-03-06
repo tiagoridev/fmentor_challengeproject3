@@ -85,7 +85,7 @@ body{
     color: var(--color-n1);
 }
 
-.activo{
+.selected{
     background-color: var(--color-p1);
     color: var(--color-n1);
 }
