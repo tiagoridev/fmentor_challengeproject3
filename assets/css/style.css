@@ -4,6 +4,7 @@
     margin: 0;
     list-style: none;
     font-family: var(--font);
+    outline: none;
 }
 :root{
     --color-p1: hsl(25, 97%, 53%);
@@ -72,11 +73,15 @@ body{
 #container-list .list-item{
     background-color: var(--color-n6);
     color: var(--color-n3);
+    font-weight: 700;
     width: .99rem;
     height: .99rem;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 50%;
-    text-align: center;
+    border: none;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     transition: all .1s linear;
 }
@@ -86,7 +91,7 @@ body{
     color: var(--color-n1);
 }
 
-.selected{
+#container-list .list-item:focus{
     background-color: var(--color-p1);
     color: var(--color-n1);
 }
@@ -101,7 +106,7 @@ body{
     text-transform: uppercase;
     color: var(--color-n1);
     letter-spacing: .1em;
-    transition: all .1s linear;
+    transition: all .1s linear;   
 }
 
 #container-btn:hover{
@@ -123,6 +128,6 @@ body{
     }
 
     #container-list .list-item{
-    padding: .8rem;
+    padding: 1.2rem;
     }
 }
