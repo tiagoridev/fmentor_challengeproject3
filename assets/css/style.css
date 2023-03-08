@@ -31,9 +31,12 @@ body{
     line-height: 1.8em;
     margin-bottom: 2rem;
 }
+section.hidden{
+    display: none;
+}
 
 /**********CONTAINER-FRONT********/
-#container-front{
+.container-front{
     width: 22rem;
     height: 23rem;
     background-color: var(--color-n4);
@@ -63,7 +66,7 @@ body{
     margin-bottom: 1.25rem;
     font-size: 2rem;    
 }
-#container-front .container-text{
+.container-front .container-text{
     text-align: left;
 }
 #container-list{
@@ -114,17 +117,16 @@ body{
 }
 
 /*********CONTAINER-BACK*********/
-#container-back{
+.container-back{
     width: 22rem;
-    height: 23rem;
+    height: 100%;
     background-color: var(--color-n4);
     padding: 2.5rem;
     border-radius: 1.88rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.8rem;
-    display: none;
+    align-items: center;   
+    gap: 1.8rem;   
 }
 #container-img{
     background-image: url('../img/illustration-thank-you.svg');
@@ -133,7 +135,7 @@ body{
     background-position: center;
     display: block;
     height: 6rem;
-    width: 9rem;   
+    width: 9rem;      
 }
 #container-note{
     color: var(--color-p1);    
@@ -150,8 +152,8 @@ body{
 
 /***********RESPONSIVE**********/
 @media (max-width: 500px) {
-    #container-front, 
-    #container-back{
+    .container-front, 
+    .container-back{
     width: 18rem;
     height: 22rem;    
     padding: 1.5rem;    
